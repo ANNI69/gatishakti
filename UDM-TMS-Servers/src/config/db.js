@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const connectDB = async () => {
   try {
     // Use environment variable or default to local MongoDB
-    const mongoUri = process.env.MONGO_URI || 'mongodb+srv://codebyanii_db_user:NgQRnJHavq7LPNGT@cluster0.topabge.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+    const mongoUri = 'mongodb+srv://codebyanii_db_user:NgQRnJHavq7LPNGT@cluster0.topabge.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
     const conn = await mongoose.connect(mongoUri);
     console.log(`MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
